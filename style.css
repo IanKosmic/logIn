@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Estilos generales aplicados a todos los elementos */
+* {
+    box-sizing: border-box; /* Caja de modelado que incluye el borde */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    font-family: Arial, sans-serif; /* Fuente predeterminada para todo el documento */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    background: linear-gradient(to right, #4b6cb7, #182848); /* Fondo con gradiente lineal */
+    display: flex; /* Contenedor principal de tipo flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del cuerpo */
+    align-items: center; /* Centra verticalmente los elementos dentro del cuerpo */
+    height: 100vh; /* 100% del alto de la ventana visible */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilos para el contenedor principal de inicio de sesión */
+.login-container {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 40px; /* Relleno interno de 40px */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    width: 100%; /* Ancho máximo del contenedor */
+    max-width: 400px; /* Ancho máximo establecido en 400px */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilos para el título de inicio de sesión */
+.login-container h2 {
+    margin-bottom: 20px; /* Margen inferior de 20px para separación */
+    font-size: 24px; /* Tamaño de fuente de 24px */
+}
+
+/* Estilos para los grupos de formularios (usuario y contraseña) */
+.form-group {
+    margin-bottom: 20px; /* Margen inferior de 20px para separación entre grupos */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilos para las etiquetas de los campos de formulario */
+.form-group label {
+    display: block; /* Mostrar como bloque para ocupar toda la anchura disponible */
+    margin-bottom: 8px; /* Margen inferior de 8px para separación entre etiquetas */
+}
+
+/* Estilos para los campos de entrada de texto y contraseña */
+.form-group input {
+    width: 100%; /* Ancho completo del contenedor padre */
+    padding: 10px; /* Relleno interno de 10px */
+    border: none; /* Borde sin estilo */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+}
+
+/* Estilos para el estado de foco de los campos de entrada */
+.form-group input:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra alrededor del campo con color de enfoque */
+}
+
+/* Estilos para los botones de inicio de sesión */
+button {
+    background-color: #4b6cb7; /* Color de fondo inicial */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Borde sin estilo */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno interno de 10px arriba y abajo, 20px a los lados */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilos para el estado de hover del botón */
+button:hover {
+    background-color: #182848; /* Nuevo color de fondo al pasar el cursor */
+}
